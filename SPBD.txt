@@ -1,0 +1,35 @@
+USE PRUEBA
+
+create procedure sp_registrar
+(
+@documento varchar (20),
+@nombres varchar (100),
+@direccion varchar (100)
+)
+as begin 
+insert into Paciente (Documento, Nombres, Direccion) 
+Values (@documento, @nombres, @direccion)
+end
+
+go 
+
+create procedure sp_modificar
+(
+@idPaciente int,
+@documento varchar (20),
+@nombres varchar (100),
+@direccion varchar (100)
+)
+as begin
+Update Paciente set Documento = @documento, Nombres = @nombres, Direccion = @direccion where idPaciente = @idPaciente
+end
+
+go
+
+create procedure sp_eliminar
+(
+@idPaciente int
+)
+as begin
+Delete Paciente where idPaciente = @idPaciente
+end

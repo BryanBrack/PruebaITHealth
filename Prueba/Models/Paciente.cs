@@ -13,6 +13,6 @@ namespace Prueba.Models
         public string Documento { get; set; }
         public string Nombres { get; set; }
         public string Direccion { get; set; }
-        public string FechaRegistro { get; set; }
+        public DateTime FechaRegistro { get; set; }
     }
 }

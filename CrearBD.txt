@@ -1,0 +1,35 @@
+Create database PRUEBA
+
+USE PRUEBA
+
+Create table Paciente 
+(
+idPaciente int primary key identity(1,1),
+Documento varchar (20),
+Nombres varchar (100),
+Direccion varchar (100),
+FechaRegistro datetime default getdate()
+)
+
+Select * from Paciente
+
+Insert into Paciente (Documento, Nombres, Direccion)
+Values ('1014295712', 'Bryan', 'CR 85 #63 F - 10')
+Insert into Paciente (Documento, Nombres, Direccion)
+Values ('1401565484', 'Andres', 'CR 85 #63 F - 10')
+Insert into Paciente (Documento, Nombres, Direccion)
+Values ('2325446484', 'William', 'CR 85 #63 F - 10')
+Insert into Paciente (Documento, Nombres, Direccion)
+Values ('1245488435', 'Juan', 'CR 85 #63 F - 10')
+Insert into Paciente (Documento, Nombres, Direccion)
+Values ('1234548435', 'José', 'CR 85 #63 F - 10')
+Insert into Paciente (Documento, Nombres, Direccion)
+Values ('1234578484', 'Ana', 'CR 85 #63 F - 10')
+Insert into Paciente (Documento, Nombres, Direccion)
+Values ('4567843487', 'Maria', 'CR 85 #63 F - 10')
+Insert into Paciente (Documento, Nombres, Direccion)
+Values ('1324654843', 'Johanna', 'CR 85 #63 F - 10')
+Insert into Paciente (Documento, Nombres, Direccion)
+Values ('4564545455', 'Carlos', 'CR 85 #63 F - 10')
+Insert into Paciente (Documento, Nombres, Direccion)
+Values ('4847687875', 'Jesus', 'CR 85 #63 F - 10')
