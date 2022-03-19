@@ -13,7 +13,7 @@ namespace Prueba.Funciones
         {
             using (SqlConnection conect = new SqlConnection(BDConexion.conexionbd)) // Establecer conexion a la BD
             {
-                SqlCommand res = new SqlCommand("sp_registrar", conect); // Consultar Store Procedure en BD
+                SqlCommand res = new SqlCommand("sp_registrar", conect); // Consultar Store Procedure en BD //
                 res.CommandType = System.Data.CommandType.StoredProcedure; // Trae el SP de la BD
                 res.Parameters.AddWithValue("@documento", paciente.Documento); //Datos envios al SP
                 res.Parameters.AddWithValue("@nombres", paciente.Nombres); //Datos envios al SP
